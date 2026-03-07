@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Digital Kaizen — Consultora de mejora continua con IA y automatizaciones simples. Pequeñas innovaciones, grandes resultados." />
+  <title>Digital Kaizen | Mejora Continua Inteligente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Digital Kaizen — inicio">
+        <img src="logo.svg" alt="Digital Kaizen" class="logo-img" />
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul role="list">
+          <li><a href="#metodo" class="nav-link">Método</a></li>
+          <li><a href="#equipo" class="nav-link">Equipo</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#casos" class="nav-link">Casos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="btn btn-primary btn-sm nav-cta" aria-label="Ir al formulario de contacto">Hablemos</a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="nav-mobile" id="mobile-menu" aria-label="Menú móvil" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#metodo" class="nav-link mobile-nav-link">Método</a></li>
+        <li><a href="#equipo" class="nav-link mobile-nav-link">Equipo</a></li>
+        <li><a href="#servicios" class="nav-link mobile-nav-link">Servicios</a></li>
+        <li><a href="#casos" class="nav-link mobile-nav-link">Casos</a></li>
+        <li><a href="#contacto" class="nav-link mobile-nav-link">Contacto</a></li>
+        <li><a href="#contacto" class="btn btn-primary btn-full">Hablemos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="section-hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="badge-start-small">
+            <span class="badge-dot"></span>
+            Start Small
+          </div>
+          <h1 id="hero-heading">
+            Mejora Continua Inteligente.<br />
+            <span class="hero-accent">Pequeñas innovaciones,<br />grandes resultados.</span>
+          </h1>
+          <p class="hero-subtitle">
+            ¿Sabés que necesitás incorporar tecnología para bajar costos y subir la productividad, pero no sabés por
+            dónde empezar? Nuestro enfoque es <strong>Start Small</strong>: empezá de a poquito, con paso firme y bajo
+            riesgo.
+            <br /><br />
+            Hacemos <strong>Digital Kaizen</strong>: unimos la filosofía de mejora continua con IA y automatizaciones
+            simples. Soluciones accesibles que se integran a tus procesos actuales para mejorar la seguridad, la calidad
+            y la eficiencia, <em>un paso a la vez</em>.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary btn-lg">Hablemos</a>
+            <a href="#metodo" class="btn btn-ghost btn-lg">Ver el método ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="hero-svg" id="hero-svg" viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Ilustración abstracta de mejora continua">
+            <!-- Background glow -->
+            <defs>
+              <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ca171e" stop-opacity="0.12" />
+                <stop offset="100%" stop-color="#ca171e" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fdb714" stop-opacity="0.10" />
+                <stop offset="100%" stop-color="#fdb714" stop-opacity="0" />
+              </radialGradient>
+              <filter id="blur1">
+                <feGaussianBlur stdDeviation="18" />
+              </filter>
+            </defs>
+
+            <!-- Soft background circles -->
+            <circle cx="300" cy="220" r="200" fill="url(#glow1)" filter="url(#blur1)" />
+            <circle cx="420" cy="130" r="120" fill="url(#glow2)" filter="url(#blur1)" />
+
+            <!-- Orbit rings -->
+            <circle cx="280" cy="240" r="160" fill="none" stroke="#ca171e" stroke-width="1" stroke-dasharray="6 10"
+              opacity="0.25" />
+            <circle cx="280" cy="240" r="110" fill="none" stroke="#fdb714" stroke-width="1" stroke-dasharray="4 8"
+              opacity="0.2" />
+            <circle cx="280" cy="240" r="60" fill="none" stroke="#ca171e" stroke-width="1.5" opacity="0.18" />
+
+            <!-- Center node (enlarged, with logo icon) -->
+            <circle cx="280" cy="240" r="42" fill="#ca171e" opacity="0.9" />
+            <circle cx="280" cy="240" r="30" fill="#fff" opacity="0.97" />
+            <image href="logo-icon.png" x="246" y="206" width="68" height="68" />
+
+            <!-- Satellite nodes (each wrapped in <g class="satellite-node"> for mouse follower JS) -->
+
+            <!-- Node 1 (top) — original position: cx=280 cy=80 -->
+            <g class="satellite-node" data-ox="280" data-oy="80">
+              <line x1="280" y1="98" x2="280" y2="198" stroke="#ca171e" stroke-width="1.5" stroke-dasharray="4 4"
+                opacity="0.4" class="satellite-connector" />
+              <circle cx="280" cy="80" r="20" fill="#fff" stroke="#ca171e" stroke-width="2" />
+              <text x="280" y="86" text-anchor="middle" font-size="12" fill="#ca171e">⚙</text>
+            </g>
+
+            <!-- Node 2 (right) — original position: cx=440 cy=240 -->
+            <g class="satellite-node" data-ox="440" data-oy="240">
+              <line x1="420" y1="240" x2="322" y2="240" stroke="#fdb714" stroke-width="1.5" stroke-dasharray="4 4"
+                opacity="0.4" class="satellite-connector" />
+              <circle cx="440" cy="240" r="20" fill="#fff" stroke="#fdb714" stroke-width="2" />
+              <text x="440" y="246" text-anchor="middle" font-size="12" fill="#fdb714">🤖</text>
+            </g>
+
+            <!-- Node 3 (bottom-right) — original position: cx=393 cy=353 -->
+            <g class="satellite-node" data-ox="393" data-oy="353">
+              <line x1="376" y1="341" x2="305" y2="269" stroke="#ca171e" stroke-width="1.5" stroke-dasharray="4 4"
+                opacity="0.4" class="satellite-connector" />
+              <circle cx="393" cy="353" r="20" fill="#fff" stroke="#ca171e" stroke-width="2" />
+              <text x="393" y="359" text-anchor="middle" font-size="12" fill="#ca171e">📈</text>
+            </g>
+
+            <!-- Node 4 (bottom-left) — original position: cx=167 cy=353 -->
+            <g class="satellite-node" data-ox="167" data-oy="353">
+              <line x1="184" y1="341" x2="258" y2="269" stroke="#fdb714" stroke-width="1.5" stroke-dasharray="4 4"
+                opacity="0.4" class="satellite-connector" />
+              <circle cx="167" cy="353" r="20" fill="#fff" stroke="#fdb714" stroke-width="2" />
+              <text x="167" y="359" text-anchor="middle" font-size="12" fill="#fdb714">🔄</text>
+            </g>
+
+            <!-- Node 5 (left) — original position: cx=120 cy=240 -->
+            <g class="satellite-node" data-ox="120" data-oy="240">
+              <line x1="140" y1="240" x2="238" y2="240" stroke="#ca171e" stroke-width="1.5" stroke-dasharray="4 4"
+                opacity="0.4" class="satellite-connector" />
+              <circle cx="120" cy="240" r="20" fill="#fff" stroke="#ca171e" stroke-width="2" />
+              <text x="120" y="246" text-anchor="middle" font-size="12" fill="#ca171e">👥</text>
+            </g>
+
+            <!-- Outer decorative nodes -->
+            <circle cx="380" cy="68" r="8" fill="#fdb714" opacity="0.5" />
+            <circle cx="490" cy="165" r="5" fill="#ca171e" opacity="0.35" />
+            <circle cx="460" cy="350" r="6" fill="#fdb714" opacity="0.4" />
+            <circle cx="90" cy="150" r="7" fill="#ca171e" opacity="0.3" />
+            <circle cx="120" cy="370" r="5" fill="#fdb714" opacity="0.3" />
+            <circle cx="210" cy="50" r="9" fill="#ca171e" opacity="0.25" />
+
+            <!-- Connecting lines to outer nodes -->
+            <line x1="298" y1="224" x2="375" y2="74" stroke="#fdb714" stroke-width="1" opacity="0.15" />
+            <line x1="298" y1="224" x2="207" y2="56" stroke="#ca171e" stroke-width="1" opacity="0.12" />
+
+            <!-- Kaizen loop arrow (decorative arc) -->
+            <path d="M 200 100 Q 350 40 430 200" fill="none" stroke="#ca171e" stroke-width="1.5" stroke-dasharray="5 6"
+              opacity="0.2" marker-end="url(#arrowhead)" />
+            <defs>
+              <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#ca171e" opacity="0.3" />
+              </marker>
+            </defs>
+
+            <!-- Label dots floating -->
+            <rect x="58" y="300" width="56" height="20" rx="10" fill="#ca171e" opacity="0.08" />
+            <text x="86" y="313" text-anchor="middle" font-family="Inter" font-size="8" fill="#ca171e"
+              opacity="0.6">Procesos</text>
+
+            <rect x="420" y="95" width="70" height="20" rx="10" fill="#fdb714" opacity="0.08" />
+            <text x="455" y="108" text-anchor="middle" font-family="Inter" font-size="8" fill="#fdb714"
+              opacity="0.7">Automatizar</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats">
+        <div class="container">
+          <div class="stats-inner">
+            <div class="stat-item">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Servicios especializados</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Enfoque humano</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-num">Start</span>
+              <span class="stat-label">Small · bajo riesgo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MÉTODO ==================== -->
+    <section id="metodo" class="section-metodo" aria-labelledby="metodo-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nuestro ADN</span>
+          <h2 id="metodo-heading">El método Digital Kaizen</h2>
+          <p class="section-intro">Cuatro principios que guían cada decisión, cada proyecto, cada mejora.</p>
+        </div>
+
+        <div class="cards-grid-2x2" role="list">
+          <article class="method-card" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect x="2" y="10" width="8" height="16" rx="2" fill="currentColor" opacity="0.8" />
+                <rect x="12" y="6" width="8" height="20" rx="2" fill="currentColor" opacity="0.6" />
+                <rect x="22" y="2" width="4" height="24" rx="2" fill="currentColor" opacity="0.4" />
+              </svg>
+            </div>
+            <div class="card-num">01</div>
+            <h3 class="card-title">Proceso antes que código</h3>
+            <p class="card-text">Como especialistas en procesos, te ayudamos a modernizar tu operación con un enfoque
+              metódico: Capacitar, trabajar en equipo, entender la operación, mejorar y estandarizar.</p>
+          </article>
+
+          <article class="method-card" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M14 2 L26 8 L26 20 L14 26 L2 20 L2 8 Z" stroke="currentColor" stroke-width="2" fill="none"
+                  opacity="0.7" />
+                <circle cx="14" cy="14" r="4" fill="currentColor" opacity="0.85" />
+              </svg>
+            </div>
+            <div class="card-num">02</div>
+            <h3 class="card-title">START SMALL: Fieles al Kaizen</h3>
+            <p class="card-text">Damos pequeños pasos, probamos, ajustamos rápido y aprendemos sobre terreno seguro.
+              Implementamos mejoras ágiles que validan el rumbo sin arriesgar tu operación diaria.</p>
+          </article>
+
+          <article class="method-card" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <circle cx="14" cy="8" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6 24 C6 18 22 18 22 24" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" />
+                <path d="M20 4 L26 10 M26 4 L20 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.6" />
+              </svg>
+            </div>
+            <div class="card-num">03</div>
+            <h3 class="card-title">Automatizar para liberar el potencial humano</h3>
+            <p class="card-text">Tu equipo es demasiado valioso para tareas mecánicas. Automatizamos la rutina para que
+              las personas puedan enfocarse en lo que importa: seguridad, calidad, productividad y el trabajo de alto
+              valor que suele quedar relegado.</p>
+          </article>
+
+          <article class="method-card" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <circle cx="8" cy="14" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+                <circle cx="20" cy="14" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M13 14 L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M8 2 L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+                <path d="M20 19 L20 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+              </svg>
+            </div>
+            <div class="card-num">04</div>
+            <h3 class="card-title">Cultura organizacional: el verdadero motor</h3>
+            <p class="card-text">La mejor IA del mundo es inútil si tu equipo no la adopta. La transformación digital
+              es, ante todo, humana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EQUIPO ==================== -->
+    <section id="equipo" class="section-equipo" aria-labelledby="equipo-heading">
+      <div class="container equipo-inner">
+        <div class="equipo-content">
+          <span class="section-tag">Hay equipo</span>
+          <h2 id="equipo-heading">Conocemos los procesos desde adentro.</h2>
+          <p class="equipo-text">
+            En Digital Kaizen no somos teóricos de la tecnología; somos especialistas en procesos. La consultora,
+            dirigida por <strong>María Belén Montaldo</strong>, combina años de experiencia real en el terreno
+            (liderando estrategias Lean y coordinando áreas de Mejora Continua e IA) con el aprendizaje directo en Japón
+            sobre la evolución del método Kaizen.
+          </p>
+          <p class="equipo-text">
+            Sabemos lo que es lidiar con cuellos de botella, inventarios y el apagar incendios todos los días. Por eso,
+            no buscamos complicarte con sistemas incomprensibles. Venimos de la industria, usamos tus mismas
+            herramientas (como 5S o resolución de problemas 8D) y nuestro único objetivo es que la tecnología te ayude a
+            trabajar mejor, no más duro.
+          </p>
+
+          <div class="equipo-profile">
+            <div class="avatar" aria-label="María Belén Montaldo">
+              <img src="belen.png" alt="María Belén Montaldo" class="avatar-img" />
+            </div>
+            <div class="profile-info">
+              <strong class="profile-name">María Belén Montaldo</strong>
+              <span class="profile-role">Fundadora & Directora · Digital Kaizen</span>
+              <a href="https://www.linkedin.com/in/belenmontaldo/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm linkedin-btn"
+                aria-label="Ver perfil de Belén Montaldo en LinkedIn (abre en nueva pestaña)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn de Belén
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="equipo-visual" aria-hidden="true">
+          <div class="equipo-card-bg">
+            <div class="ekv-item">
+              <div class="ekv-icon">🎌</div>
+              <div>
+                <strong>Formación en Japón</strong>
+                <span>Kaizen Institute · Método original</span>
+              </div>
+            </div>
+            <div class="ekv-item">
+              <div class="ekv-icon">🏭</div>
+              <div>
+                <strong>Industria real</strong>
+                <span>Lean, 5S, 8D · Terreno propio</span>
+              </div>
+            </div>
+            <div class="ekv-item">
+              <div class="ekv-icon">🤖</div>
+              <div>
+                <strong>IA aplicada</strong>
+                <span>Coordinación de equipos de IA</span>
+              </div>
+            </div>
+            <div class="ekv-item">
+              <div class="ekv-icon">📊</div>
+              <div>
+                <strong>Mejora Continua</strong>
+                <span>Dirección estratégica de áreas MC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section id="servicios" class="section-servicios" aria-labelledby="servicios-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Servicios</span>
+          <h2 id="servicios-heading">¿Cómo te acompañamos?</h2>
+          <p class="section-intro">Tres servicios diseñados para que des el paso hacia la mejora continua digital sin
+            riesgos y con resultados reales.</p>
+        </div>
+
+        <div class="servicios-grid" role="list">
+          <article class="servicio-card" role="listitem">
+            <div class="servicio-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="3" y="3" width="26" height="26" rx="6" stroke="currentColor" stroke-width="2" fill="none"
+                  opacity="0.3" />
+                <path d="M10 16 L13 19 L22 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="26" cy="8" r="4" fill="currentColor" opacity="0.7" />
+                <circle cx="26" cy="8" r="2" fill="white" />
+              </svg>
+            </div>
+            <div class="servicio-num" aria-hidden="true">01</div>
+            <h3 class="servicio-title">Alfabetización y Nivelación en IA</h3>
+            <p class="servicio-desc">Llevamos a tu equipo del "no sé nada de IA" al "la uso todos los días" con un
+              enfoque práctico, sin tecnicismos y adaptado a tu industria.</p>
+            <ul class="servicio-bullets" aria-label="Qué incluye">
+              <li>Workshop inicial de diagnóstico y nivelación</li>
+              <li>Casos prácticos por rol y área</li>
+              <li>Guía de uso responsable y ético de IA</li>
+              <li>Seguimiento post-implementación</li>
+            </ul>
+          </article>
+
+          <article class="servicio-card" role="listitem">
+            <div class="servicio-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" fill="none" opacity="0.3" />
+                <path d="M10 16 C10 12.5 13 10 16 10 C19 10 22 12.5 22 16 C22 19.5 19 22 16 22" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" fill="none" />
+                <path d="M13 22 L16 22 L16 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" fill="none" />
+                <circle cx="16" cy="16" r="3" fill="currentColor" opacity="0.8" />
+              </svg>
+            </div>
+            <div class="servicio-num" aria-hidden="true">02</div>
+            <h3 class="servicio-title">Automatizaciones de Bajo Riesgo</h3>
+            <p class="servicio-desc">Identificamos las tareas más repetitivas de tu operación y las automatizamos de
+              forma simple, rápida y validada. Sin disrupciones, con resultados visibles.</p>
+            <ul class="servicio-bullets" aria-label="Qué incluye">
+              <li>Mapeo de tareas repetitivas y cuellos de botella</li>
+              <li>Prototipo rápido en tu entorno real</li>
+              <li>Validación con el equipo usuario</li>
+              <li>Documentación y traspaso</li>
+            </ul>
+          </article>
+
+          <article class="servicio-card" role="listitem">
+            <div class="servicio-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 4 L28 10 L28 22 L16 28 L4 22 L4 10 Z" stroke="currentColor" stroke-width="2" fill="none"
+                  opacity="0.3" />
+                <path d="M12 14 L16 10 L20 14 M16 10 L16 22" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9" />
+              </svg>
+            </div>
+            <div class="servicio-num" aria-hidden="true">03</div>
+            <h3 class="servicio-title">Reconversión y Evolución de Roles</h3>
+            <p class="servicio-desc">Acompañamos a tu equipo en la transición hacia roles más estratégicos, donde la IA
+              hace el trabajo rutinario y las personas aportan su máximo valor.</p>
+            <ul class="servicio-bullets" aria-label="Qué incluye">
+              <li>Rediseño de rol con foco en valor humano</li>
+              <li>Plan de adopción gradual y sin resistencia</li>
+              <li>Métricas de impacto y seguimiento</li>
+              <li>Soporte continuo al equipo</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="servicios-cta">
+          <p>¿No sabés cuál es el primer paso para tu equipo?</p>
+          <a href="#contacto" class="btn btn-primary btn-lg">Hablemos y lo descubrimos juntos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CASOS ==================== -->
+    <section id="casos" class="section-casos" aria-labelledby="casos-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Resultados reales</span>
+          <h2 id="casos-heading">Quick Wins en acción</h2>
+          <p class="section-intro">Proyectos concretos, impacto medible. Así se ve el Kaizen digital en la práctica.</p>
+        </div>
+
+        <div class="accordion" role="list" id="casos-accordion">
+          <!-- Caso 1: SAMECO -->
+          <article class="accordion-item accordion-item--open" role="listitem">
+            <button class="accordion-trigger" aria-expanded="true" aria-controls="caso-1-content" id="caso-1-trigger">
+              <div class="accordion-header-inner">
+                <span class="caso-badge">Caso completado</span>
+                <span class="accordion-title">SAMECO — Sociedad Argentina de Mejora Continua</span>
+              </div>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5 L10 12.5 L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="caso-1-content" aria-labelledby="caso-1-trigger" role="region">
+              <div class="caso-grid">
+                <div class="caso-block">
+                  <div class="caso-block-icon" aria-hidden="true">🎯</div>
+                  <h4>El desafío</h4>
+                  <p>Gran volumen de consultas sobre cursos y capacitaciones, consumiendo horas de trabajo manual del
+                    equipo.</p>
+                </div>
+                <div class="caso-block">
+                  <div class="caso-block-icon" aria-hidden="true">⚡</div>
+                  <h4>La solución Kaizen</h4>
+                  <p>Automatizamos el proceso de recepción y clasificación inicial de esas consultas, integrando la
+                    herramienta al flujo existente del equipo.</p>
+                </div>
+                <div class="caso-block caso-block--impact">
+                  <div class="caso-block-icon" aria-hidden="true">🚀</div>
+                  <h4>El impacto</h4>
+                  <p>Respuestas inmediatas para los interesados, liberación de carga operativa para el equipo y una
+                    adopción tecnológica fluida y sin estrés.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Caso 2: Bot de Andar (Próximamente) -->
+          <article class="accordion-item accordion-item--soon" role="listitem">
+            <button class="accordion-trigger accordion-trigger--disabled" aria-expanded="false"
+              aria-controls="caso-2-content" id="caso-2-trigger" aria-disabled="true">
+              <div class="accordion-header-inner">
+                <span class="caso-badge caso-badge--soon">Próximamente</span>
+                <span class="accordion-title">El Bot de Andar</span>
+              </div>
+              <span class="accordion-icon accordion-icon--lock" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <rect x="3" y="8" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"
+                    opacity="0.5" />
+                  <path d="M6 8 V5 C6 3.34 7.34 2 9 2 C10.66 2 12 3.34 12 5 V8" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" fill="none" opacity="0.5" />
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-content accordion-content--soon" id="caso-2-content" aria-labelledby="caso-2-trigger"
+              role="region">
+              <div class="caso-soon-msg">
+                <div class="caso-soon-icon" aria-hidden="true">⏳</div>
+                <p>Estamos documentando este caso de éxito. <strong>¡Volvé pronto!</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Empty state (hidden, shown via JS if no cases) -->
+        <div class="casos-empty" id="casos-empty" hidden aria-live="polite">
+          <p class="casos-empty-text">Estamos documentando nuestros primeros quick wins. ¿Querés que el tuyo sea el
+            próximo?</p>
+          <a href="#contacto" class="btn btn-primary">Hablemos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="section-contacto" aria-labelledby="contacto-heading">
+      <div class="container contacto-inner">
+        <div class="contacto-copy">
+          <span class="section-tag">Empezá hoy</span>
+          <h2 id="contacto-heading" style="color: #1a1a1b;">La tecnología más avanzada no sirve de nada si tu
+            equipo no sabe cómo usarla.</h2>
+          <p class="contacto-sub">Demos el primer paso juntos. Sin compromisos, sin tecnicismos. Solo una conversación
+            honesta sobre tus procesos.</p>
+
+          <div class="contacto-guarantees">
+            <div class="guarantee-item">
+              <span class="guarantee-icon" aria-hidden="true">🔒</span>
+              <span>No compartimos tus datos</span>
+            </div>
+            <div class="guarantee-item">
+              <span class="guarantee-icon" aria-hidden="true">⚡</span>
+              <span>Te contactamos en 48 hs hábiles</span>
+            </div>
+            <div class="guarantee-item">
+              <span class="guarantee-icon" aria-hidden="true">🆓</span>
+              <span>Primera consulta sin costo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacto-form-wrapper">
+          <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto">
+            <!-- Honeypot anti-spam -->
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Sitio web</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre <span aria-label="requerido"
+                  class="required-star">*</span></label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required
+                minlength="2" autocomplete="name" aria-describedby="nombre-error" />
+              <span class="form-error" id="nombre-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email <span aria-label="requerido"
+                  class="required-star">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@empresa.com" required
+                autocomplete="email" aria-describedby="email-error" />
+              <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="empresa" class="form-label">Empresa <span class="optional-label">(opcional)</span></label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Tu empresa o organización"
+                autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="proceso" class="form-label">
+                ¿Cuál es el proceso que más tiempo le roba a tu equipo hoy?
+                <span aria-label="requerido" class="required-star">*</span>
+              </label>
+              <textarea id="proceso" name="proceso" class="form-input form-textarea"
+                placeholder="Contame brevemente. Por ejemplo: 'Todos los días pasamos horas consolidando planillas de distintas áreas en Excel...'"
+                required minlength="10" rows="4" aria-describedby="proceso-error"></textarea>
+              <span class="form-error" id="proceso-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary btn-xl btn-submit" id="submit-btn">
+                <span class="btn-text">Empezar el cambio</span>
+                <span class="btn-spinner" aria-hidden="true" hidden></span>
+              </button>
+              <p class="form-legal">No compartimos tus datos. Te contactamos en 48 hs hábiles.</p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo footer-logo" aria-label="Digital Kaizen — volver al inicio">
+          <img src="logo.svg" alt="Digital Kaizen" class="logo-img logo-img--footer" />
+        </a>
+        <p class="footer-tagline">Mejora Continua Inteligente</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="#metodo" class="footer-link">Método</a>
+        <a href="#equipo" class="footer-link">Equipo</a>
+        <a href="#servicios" class="footer-link">Servicios</a>
+        <a href="#casos" class="footer-link">Casos</a>
+        <a href="#contacto" class="footer-link">Contacto</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:belen@digitalkaizen.com.ar" class="footer-email">belen@digitalkaizen.com.ar</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footer-year"></span> Digital Kaizen · Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
