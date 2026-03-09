@@ -691,6 +691,107 @@ h1#hero-heading {
   flex-shrink: 0;
 }
 
+/* === 7.5 PILARES === */
+.section-pilares {
+  background: var(--color-bg);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  position: relative;
+}
+
+@media (min-width: 992px) {
+
+  .pilares-grid::after,
+  .pilares-grid::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(202, 23, 30, 0), rgba(202, 23, 30, 0.4), rgba(202, 23, 30, 0));
+  }
+
+  .pilares-grid::before {
+    left: 33.333%;
+  }
+
+  .pilares-grid::after {
+    left: 66.666%;
+  }
+}
+
+.pilar-card {
+  text-align: center;
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pilar-icon {
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pilar-icon svg,
+.pilar-img {
+  width: 72px !important;
+  height: 72px !important;
+  object-fit: contain;
+}
+
+.pilar-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+  letter-spacing: 0.02em;
+}
+
+.pilar-text {
+  font-size: var(--fs-base);
+  color: var(--color-text-muted);
+  line-height: var(--lh-relaxed);
+}
+
+@media (max-width: 991px) {
+  .pilares-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .pilar-card {
+    padding: 0;
+  }
+
+  .pilar-card:not(:last-child) {
+    position: relative;
+    padding-bottom: var(--space-10);
+  }
+
+  .pilar-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(202, 23, 30, 0), rgba(202, 23, 30, 0.4), rgba(202, 23, 30, 0));
+  }
+}
+
 /* === 8. MÉTODO === */
 .section-metodo {
   padding: var(--section-padding-y) 0;
@@ -927,7 +1028,7 @@ h1#hero-heading {
 
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
   margin-bottom: var(--space-12);
 }
@@ -1648,6 +1749,10 @@ h1#hero-heading {
   .equipo-inner {
     grid-template-columns: 1fr;
     gap: var(--space-10);
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .equipo-visual {
