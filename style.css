@@ -693,7 +693,7 @@ h1#hero-heading {
 
 /* === 7.5 PILARES === */
 .section-pilares {
-  background: var(--color-bg);
+  background: var(--color-bg-soft);
   padding: var(--space-16) 0 var(--space-8);
 }
 
@@ -1430,6 +1430,36 @@ h1#hero-heading {
   border-radius: var(--radius-2xl);
   padding: var(--space-10);
   box-shadow: var(--shadow-xl);
+}
+
+.form-success-state {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-8) 0;
+}
+
+.form-success-state[hidden] {
+  display: none !important;
+}
+
+.success-icon {
+  margin-bottom: var(--space-4);
+}
+
+.form-success-state h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.form-success-state p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
 }
 
 .contact-form {

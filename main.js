@@ -374,35 +374,24 @@
             };
 
             try {
-                /*
-                 * SUBMISSION STRATEGY (V1 — frontend only):
-                 * We use a Formspree endpoint (or similar service) to deliver the
-                 * lead data to belen@digitalkaizen.com.ar without a backend.
-                 *
-                 * To activate: replace FORMSPREE_ENDPOINT with the real URL
-                 * from https://formspree.io (create a free account, add the endpoint).
-                 *
-                 * Current: after 1.5s we simulate success so the UI is demonstrable.
-                 */
-                const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mdalbrvz';
-                const isDemo = FORMSPREE_ENDPOINT.includes('https://formspree.io/f/mdalbrvz');
+                const ENDPOINT = 'https://formsubmit.co/ajax/belen@digitalkaizen.com.ar';
 
-                if (isDemo) {
-                    // Demo mode: simulate network delay + success
-                    await new Promise(resolve => setTimeout(resolve, 1500));
+                const response = await fetch(ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({
+                        _subject: "Nuevo caso de soporte desde Landing Page",
+                        nombre: data.nombre,
+                        email: data.email,
+                        empresa: data.empresa,
+                        proceso: data.proceso
+                    }),
+                });
+
+                if (response.ok) {
                     showSuccess();
                 } else {
-                    const response = await fetch(FORMSPREE_ENDPOINT, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                        body: JSON.stringify(data),
-                    });
-
-                    if (response.ok) {
-                        showSuccess();
-                    } else {
-                        throw new Error(`HTTP ${response.status}`);
-                    }
+                    throw new Error(`HTTP ${response.status}`);
                 }
             } catch (err) {
                 console.error('Form submission error:', err);
