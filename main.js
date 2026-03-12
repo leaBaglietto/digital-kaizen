@@ -335,71 +335,7 @@
             setLoading(false);
         });
 
-        // --- Form submission ---
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            // Honeypot check
-            const hpValue = (form.elements['website']?.value || '').trim();
-            if (hpValue) { showSuccess(); return; } // silently fake success
-
-            // Validate all fields
-            const isNombreOk = validateNombre();
-            const isEmailOk = validateEmail();
-            const isProcesoOk = validateProceso();
-
-            if (!isNombreOk || !isEmailOk || !isProcesoOk) {
-                // Focus first error
-                ['nombre', 'email', 'proceso'].find(name => {
-                    const input = getField(name);
-                    if (input?.classList.contains('has-error')) {
-                        input.focus();
-                        return true;
-                    }
-                    return false;
-                });
-                return;
-            }
-
-            setLoading(true);
-            if (errorEl) errorEl.hidden = true;
-
-            const data = {
-                nombre: (getField('nombre')?.value || '').trim(),
-                email: (getField('email')?.value || '').trim(),
-                empresa: (getField('empresa')?.value || '').trim(),
-                proceso: (getField('proceso')?.value || '').trim(),
-                origen: 'landing',
-                timestamp: new Date().toISOString(),
-            };
-
-            try {
-                const ENDPOINT = 'https://formsubmit.co/ajax/belen@digitalkaizen.com.ar';
-
-                const response = await fetch(ENDPOINT, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                    body: JSON.stringify({
-                        _subject: "Nuevo caso de soporte desde Landing Page",
-                        nombre: data.nombre,
-                        email: data.email,
-                        empresa: data.empresa,
-                        proceso: data.proceso
-                    }),
-                });
-
-                if (response.ok) {
-                    showSuccess();
-                } else {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-            } catch (err) {
-                console.error('Form submission error:', err);
-                showError();
-            } finally {
-                setLoading(false);
-            }
-        });
+        // Form submission is now handled natively via HTML FormSubmit
     }
 
     /* ================================================================
