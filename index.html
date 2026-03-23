@@ -29,7 +29,7 @@
           <li><a href="#metodo" class="nav-link">Método</a></li>
           <li><a href="#equipo" class="nav-link">Equipo</a></li>
           <li><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="#casos" class="nav-link">Casos</a></li>
+          <li><a href="casos.html" class="nav-link">Casos</a></li>
           <li><a href="#ida-y-vuelta" class="nav-link">Ida y vuelta</a></li>
           <li><a href="#novedades" class="nav-link mobile-nav-link">Novedades</a></li>
 
@@ -52,7 +52,7 @@
         <li><a href="#metodo" class="nav-link mobile-nav-link">Método</a></li>
         <li><a href="#equipo" class="nav-link mobile-nav-link">Equipo</a></li>
         <li><a href="#servicios" class="nav-link mobile-nav-link">Servicios</a></li>
-        <li><a href="#casos" class="nav-link mobile-nav-link">Casos</a></li>
+        <li><a href="casos.html" class="nav-link mobile-nav-link">Casos</a></li>
         <li><a href="#ida-y-vuelta" class="nav-link mobile-nav-link">Ida y vuelta</a></li>
         <li><a href="#novedades" class="nav-link mobile-nav-link">Novedades</a></li>
         <li><a href="#contacto" class="btn btn-primary btn-full">Hablemos</a></li>
@@ -507,7 +507,7 @@
     <section id="casos" class="section-casos" aria-labelledby="casos-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Resultados reales</span>
+          <span class="section-tag">Casos reales</span>
           <h2 id="casos-heading">Quick Wins en acción</h2>
           <p class="section-intro">Proyectos concretos, impacto medible. Así se ve el Kaizen digital en la práctica.</p>
         </div>
@@ -516,9 +516,11 @@
           <!-- Caso 1: SAMECO -->
           <article class="accordion-item accordion-item--open" role="listitem">
             <button class="accordion-trigger" aria-expanded="true" aria-controls="caso-1-content" id="caso-1-trigger">
-              <div class="accordion-header-inner">
-                <span class="caso-badge">Caso completado</span>
-                <span class="accordion-title">SAMECO — Sociedad Argentina de Mejora Continua</span>
+              <div class="accordion-header-inner"
+                style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+                <span class="accordion-title">Caso Andar: La balanza que incluye</span>
+                <span style="font-size: var(--fs-sm); color: var(--color-text-muted); font-weight: var(--fw-normal);">En
+                  colaboración con JICA - SAMECO - Granja Andar</span>
               </div>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -530,25 +532,24 @@
             <div class="accordion-content" id="caso-1-content" aria-labelledby="caso-1-trigger" role="region">
               <div class="caso-grid">
                 <div class="caso-block">
-                  <div class="caso-block-icon" aria-hidden="true">🎯</div>
                   <h4>El desafío</h4>
-                  <p>Gran volumen de consultas sobre cursos y capacitaciones, consumiendo horas de trabajo manual del
-                    equipo.</p>
+                  <p>La Asociación Civil Andar, en Moreno (Buenos Aires), genera trabajo para 130 personas, 70 de las
+                    cuales tienen algún tipo de discapacidad...</p>
                 </div>
                 <div class="caso-block">
-                  <div class="caso-block-icon" aria-hidden="true">⚡</div>
                   <h4>La solución Kaizen</h4>
-                  <p>Automatizamos el proceso de recepción y clasificación inicial de esas consultas, integrando la
-                    herramienta al flujo existente del equipo.</p>
+                  <p>Construimos un prototipo de balanza IoT inclusiva usando hardware modular M5Stack, programado en
+                    Micro Python...</p>
                 </div>
-                <div class="caso-block caso-block--impact">
-                  <div class="caso-block-icon" aria-hidden="true">🚀</div>
+                <div class="caso-block">
                   <h4>El impacto</h4>
-                  <p>Respuestas inmediatas para los interesados, liberación de carga operativa para el equipo y una
-                    adopción tecnológica fluida y sin estrés.</p>
+                  <p>Que Emilia pueda pesar 500 gramos de harina sola, sin ayuda, con confianza. Que el coordinador pase
+                    de supervisar cada tarea a gestionar...</p>
                 </div>
               </div>
-            </div>
+              <div style="padding-bottom: 1.5rem; display: flex; justify-content: center;">
+                <a href="caso-andar.html" class="btn btn-secondary btn-sm">Ver caso completo →</a>
+              </div>
           </article>
 
           <!-- Caso 2: Bot de Andar (Próximamente) -->
@@ -693,7 +694,7 @@
         <a href="#metodo" class="footer-link">Método</a>
         <a href="#equipo" class="footer-link">Equipo</a>
         <a href="#servicios" class="footer-link">Servicios</a>
-        <a href="#casos" class="footer-link">Casos</a>
+        <a href="casos.html" class="footer-link">Casos</a>
         <a href="#ida-y-vuelta" class="footer-link">Ida y vuelta</a>
         <a href="#contacto" class="footer-link">Hablemos</a>
       </nav>

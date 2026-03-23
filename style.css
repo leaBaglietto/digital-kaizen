@@ -295,7 +295,6 @@ button {
 
 .btn-secondary:hover {
   background: var(--clr-red-50);
-  transform: translateY(-1px);
 }
 
 /* Ghost */

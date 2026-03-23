@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital Kaizen — Casos de éxito." />
+  <title>Casos de Éxito | Digital Kaizen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+
+<body>
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Digital Kaizen — inicio">
+        <img src="logo.svg" alt="Digital Kaizen" class="logo-img" />
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul role="list">
+          <li><a href="index.html#metodo" class="nav-link">Método</a></li>
+          <li><a href="index.html#equipo" class="nav-link">Equipo</a></li>
+          <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="casos.html" class="nav-link active">Casos</a></li>
+          <li><a href="index.html#ida-y-vuelta" class="nav-link">Ida y vuelta</a></li>
+          <li><a href="index.html#novedades" class="nav-link mobile-nav-link">Novedades</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#contacto" class="btn btn-primary btn-sm nav-cta"
+        aria-label="Ir al formulario de contacto">Hablemos</a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="nav-mobile" id="mobile-menu" aria-label="Menú móvil" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html#metodo" class="nav-link mobile-nav-link">Método</a></li>
+        <li><a href="index.html#equipo" class="nav-link mobile-nav-link">Equipo</a></li>
+        <li><a href="index.html#servicios" class="nav-link mobile-nav-link">Servicios</a></li>
+        <li><a href="casos.html" class="nav-link mobile-nav-link active">Casos</a></li>
+        <li><a href="index.html#ida-y-vuelta" class="nav-link mobile-nav-link">Ida y vuelta</a></li>
+        <li><a href="index.html#novedades" class="nav-link mobile-nav-link">Novedades</a></li>
+        <li><a href="index.html#contacto" class="btn btn-primary btn-full">Hablemos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding-top: var(--space-20); padding-bottom: var(--space-20); min-height: 70vh;">
+    <section class="container">
+      <div class="section-header" style="margin-bottom: var(--space-12);">
+        <span class="section-tag">Nuestros logros</span>
+        <h2>Casos de éxito documentados</h2>
+        <p class="section-intro">Conocé en profundidad cómo implementamos la mejora continua y automatizaciones en
+          equipos reales.</p>
+      </div>
+
+      <div class="accordion" role="list" id="casos-accordion">
+        
+        <!-- ==================== CASO 1: GRANJA ANDAR ==================== -->
+        <!-- Inicia tarjeta de caso -->
+        <article class="accordion-item accordion-item--open" role="listitem">
+          <button class="accordion-trigger" aria-expanded="true" aria-controls="caso-1-content" id="caso-1-trigger">
+            <div class="accordion-header-inner"
+              style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+              <span class="accordion-title">Caso Andar: La balanza que incluye</span>
+              <span style="font-size: var(--fs-sm); color: var(--color-text-muted); font-weight: var(--fw-normal);">En
+                colaboración con JICA - SAMECO - Granja Andar</span>
+            </div>
+            <span class="accordion-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5 L10 12.5 L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="caso-1-content" aria-labelledby="caso-1-trigger" role="region">
+            <div class="caso-grid">
+              <div class="caso-block">
+                <h4>El desafío</h4>
+                <p>La Asociación Civil Andar, en Moreno (Buenos Aires), genera trabajo para 130 personas, 70 de las
+                  cuales tienen algún tipo de discapacidad...</p>
+              </div>
+              <div class="caso-block">
+                <h4>La solución Kaizen</h4>
+                <p>Construimos un prototipo de balanza IoT inclusiva usando hardware modular M5Stack, programado en
+                  Micro Python...</p>
+              </div>
+              <div class="caso-block">
+                <h4>El impacto</h4>
+                <p>Que Emilia pueda pesar 500 gramos de harina sola, sin ayuda, con confianza. Que el coordinador pase
+                  de supervisar cada tarea a gestionar...</p>
+              </div>
+            </div>
+          </div>
+          <div style="padding-bottom: 1.5rem; display: flex; justify-content: center;">
+            <a href="caso-andar.html" class="btn btn-secondary btn-sm">Ver caso completo →</a>
+          </div>
+        </article>
+        <!-- Fin de la tarjeta del Caso 1 -->
+        <!-- ============================================================== -->
+
+        <!-- ESPACIO PARA EL CASO 2 -->
+        <!-- (Si querés sumar otro caso, pegá acá abajo toda la estructura del `article` anterior y cambiale el id="caso-X-...") -->
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-12);">
+        <a href="index.html" class="btn btn-secondary btn-lg">← Volver al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo" aria-label="Digital Kaizen — volver al inicio">
+          <img src="logo.svg" alt="Digital Kaizen" class="logo-img logo-img--footer" />
+        </a>
+        <p class="footer-tagline">Mejora Continua Inteligente</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="index.html#metodo" class="footer-link">Método</a>
+        <a href="index.html#equipo" class="footer-link">Equipo</a>
+        <a href="index.html#servicios" class="footer-link">Servicios</a>
+        <a href="casos.html" class="footer-link">Casos</a>
+        <a href="index.html#ida-y-vuelta" class="footer-link">Ida y vuelta</a>
+        <a href="index.html#contacto" class="footer-link">Hablemos</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:belen@digitalkaizen.com.ar" class="footer-email">belen@digitalkaizen.com.ar</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footer-year"></span> Digital Kaizen · Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
