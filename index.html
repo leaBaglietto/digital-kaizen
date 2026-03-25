@@ -552,31 +552,46 @@
               </div>
           </article>
 
-          <!-- Caso 2: Bot de Andar (Próximamente) -->
-          <article class="accordion-item accordion-item--soon" role="listitem">
-            <button class="accordion-trigger accordion-trigger--disabled" aria-expanded="false"
-              aria-controls="caso-2-content" id="caso-2-trigger" aria-disabled="true">
-              <div class="accordion-header-inner">
-                <span class="caso-badge caso-badge--soon">Próximamente</span>
-                <span class="accordion-title">El Bot de Andar</span>
+          <!-- ==================== CASO 2 ==================== -->
+          <article class="accordion-item" role="listitem">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="caso-2-content" id="caso-2-trigger">
+              <div class="accordion-header-inner"
+                style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+                <span class="accordion-title">Caso Andar: GEM, el bot que democratiza el conocimiento</span>
+                <span style="font-size: var(--fs-sm); color: var(--color-text-muted); font-weight: var(--fw-normal);">En
+                  colaboración con SAMECO · Granja Andar</span>
               </div>
-              <span class="accordion-icon accordion-icon--lock" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <rect x="3" y="8" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"
-                    opacity="0.5" />
-                  <path d="M6 8 V5 C6 3.34 7.34 2 9 2 C10.66 2 12 3.34 12 5 V8" stroke="currentColor" stroke-width="1.5"
-                    stroke-linecap="round" fill="none" opacity="0.5" />
+              <span class="accordion-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5 L10 12.5 L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </span>
             </button>
-            <div class="accordion-content accordion-content--soon" id="caso-2-content" aria-labelledby="caso-2-trigger"
-              role="region">
-              <div class="caso-soon-msg">
-                <div class="caso-soon-icon" aria-hidden="true">⏳</div>
-                <p>Estamos documentando este caso de éxito. <strong>¡Volvé pronto!</strong></p>
+            <div class="accordion-content" id="caso-2-content" aria-labelledby="caso-2-trigger" role="region">
+              <div class="caso-grid">
+                <div class="caso-block">
+                  <h4>El desafío</h4>
+                  <p>En Granja Andar trabajan con la Escala SIS (Escala de Intensidad de Apoyos), una herramienta global
+                    que permite identificar qué recursos necesita cada persona con discapacidad...</p>
+                </div>
+                <div class="caso-block">
+                  <h4>La solución Kaizen</h4>
+                  <p>En lugar de capacitar a más expertos (lento y costoso), construimos GEM: un asistente conversacional
+                    impulsado por IA, entrenado exclusivamente con los manuales oficiales...</p>
+                </div>
+                <div class="caso-block">
+                  <h4>El impacto</h4>
+                  <p>Personas sin años de experiencia técnica pueden ahora aplicar una herramienta compleja con alta
+                    precisión. El facilitador deja de luchar con rúbricas y cálculos...</p>
+                </div>
+              </div>
+              <div style="padding-bottom: 1.5rem; display: flex; justify-content: center;">
+                <a href="caso-gem.html" class="btn btn-secondary btn-sm">Ver caso completo →</a>
               </div>
             </div>
           </article>
+
         </div>
 
         <!-- Empty state (hidden, shown via JS if no cases) -->
